@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.17)  25 MAR 2024 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.17)  2 DEC 2024 22:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jerryliu/Desktop/matrices/template.tex
-(/home/jerryliu/Desktop/matrices/template.tex
+**/home/jerryliu/Desktop/15225/36225/template.tex
+(/home/jerryliu/Desktop/15225/36225/template.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
@@ -23,7 +23,7 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (/home/jerryliu/Desktop/matrices/preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/home/jerryliu/Desktop/15225/36225/preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -1006,45 +1006,45 @@ File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen331
-)) (/home/jerryliu/Desktop/matrices/macros.tex) (/home/jerryliu/Desktop/matrices/letterfonts.tex) (/home/jerryliu/Desktop/matrices/template.aux)
+)) (/home/jerryliu/Desktop/15225/36225/macros.tex) (/home/jerryliu/Desktop/15225/36225/letterfonts.tex) (/home/jerryliu/Desktop/15225/36225/template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 11.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 10.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1100,10 +1100,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box138
-Package hyperref Info: Link coloring ON on input line 11.
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+Package hyperref Info: Link coloring ON on input line 10.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count384
  (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
@@ -1117,23 +1117,23 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 13.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 ) [1
@@ -1141,11 +1141,12 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 17.
+(Font)              using `OT1/cmr/bx/n' instead on input line 16.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(/home/jerryliu/Desktop/matrices/template.toc
+(/home/jerryliu/Desktop/15225/36225/template.toc
+Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write7
@@ -1154,15 +1155,24 @@ Missing character: There is no ; in font nullfont!
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.18 
       [1
 
 ]
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 33.
+(Font)              size <5> substituted on input line 24.
 
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]
+ []
+
+[3] [4] [5] [6]
+Chapter 2.
 \g__nicematrix_max_cell_width_dim=\dimen334
 \c@iRow=\count385
 \c@jCol=\count386
@@ -1188,26 +1198,26 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 \l__nicematrix_initial_j_int=\count393
 \l__nicematrix_final_i_int=\count394
 \l__nicematrix_final_j_int=\count395
-[2
+[7
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 136.
+(Font)              size <5> substituted on input line 361.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--136
+Underfull \hbox (badness 10000) in paragraph at lines 339--361
 
  []
 
-[3]
+[8]
 \g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box140
- [4] [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
- (/home/jerryliu/Desktop/matrices/template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 243.
+ [9] [10] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
+ (/home/jerryliu/Desktop/15225/36225/template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 468.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1218,18 +1228,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34017 strings out of 481239
- 689915 string characters out of 5920377
- 1089926 words of memory out of 5000000
- 48518 multiletter control sequences out of 15000+600000
+ 34115 strings out of 481239
+ 691572 string characters out of 5920377
+ 1090621 words of memory out of 5000000
+ 48578 multiletter control sequences out of 15000+600000
  579299 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,17n,105p,969b,1733s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXBMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxbmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxbsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb>
-Output written on /home/jerryliu/Desktop/matrices/template.pdf (7 pages, 230127 bytes).
+ 68i,17n,105p,972b,1733s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXBMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxbmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxbsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
+Output written on /home/jerryliu/Desktop/15225/36225/template.pdf (12 pages, 278392 bytes).
 PDF statistics:
- 282 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

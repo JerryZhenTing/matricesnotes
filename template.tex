@@ -1,10 +1,9 @@
 \documentclass{report}
-
 \input{preamble}
 \input{macros}
 \input{letterfonts}
 
-\title{\Huge{21241}\\Matrices and transformation}
+\title{\Huge{36225}\\Probability}
 \author{\huge{ZhenTing Liu}}
 \date{}
 
@@ -17,6 +16,232 @@
 \tableofcontents
 \pagebreak
 
+\chapter{Multivariate Distribution}
+\section{Multivariate distribution}
+\dfn{}{Let $Y_1$ and $Y_2$ be discrete random variables. The joint (or bivariate) probability
+function for $Y_1$ and $Y_2$ is given by
+$$p(y_1,y_2) = P(Y_1 = y_1, Y_2 = y_2), \quad -\infty < y_1 < \infty, -\infty < y_2 < \infty$$
+}
+
+In the single-variable case , the probability function for a discrete random variable Y assigns nonzero probabilities to a finite or
+countable number of distinct values of Y in such a way that the sum of the probabilities
+is equal to 1. Similarly, in the bivariate case the joint probability function $p(y_1, y_2)$
+assigns nonzero probabilities to only a finite or countable number of pairs of values
+$(y_1, y_2)$. Further, the nonzero probabilities must sum to 1.
+
+\thm{Discrete random variables}{
+	If $Y_1$ and $Y_2$ are discrete random variables with joint probability function
+$p(y_1, y_2)$, then
+\begin{enumerate}
+	\item  $p(y_1,y_2) \geq 0 \quad \forall y_1, y_2 $
+	\item $\sum_{y_1,y_2}p(y_1,y_2) = 1$
+\end{enumerate}
+}
+
+As in the case of univariate random variables, the distinction between jointly
+discrete and jointly continuous random variables may be characterized in terms of
+their (joint) distribution functions.
+
+\dfn{}{For any random variables $Y_1$ and $Y_2$, the joint (bivariate) distribution function
+$F(y_1, y_2)$ is
+$$F(y_1,y_2) = P(Y_1 \leq y_1, Y_2 \leq y_2) \quad -\infty < y_1 < \infty, -\infty < y_2 < \infty$$
+}
+
+\nt{
+	If $Y_1$ and $Y_2$ are random variables with joint distribution function $F(y_1, y_2)$, then
+	\begin{enumerate}
+		\item $F(-\infty, -\infty) = F(-\infty,y_2) = F(y_1, -\infty) = 0$
+		\item $F(\infty,\infty) = 1$
+	\end{enumerate}
+}
+
+\thm{Continous random variables}{If $Y_1$ and $Y_2$ are jointly continuous random variables with a joint density function
+given by $f(y_1, y_2)$, then
+\begin{enumerate}
+	\item $f(y_1,y_2) \geq 0, \quad \text{for all} \quad y_1, y_2$
+	\item $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f(y_1,y_2)dy_1dy_2 = 1$
+\end{enumerate}
+
+}
+
+
+
+
+\section{Marginal and Conditional distribution}
+univariate event $(Y_1 = y_1)$ is the union of bivariate events of the type
+$(Y_1 = y_1, Y_2 = y_2)$, with the union being taken over all possible values for $y_2$.
+\dfn{Marginal Distribution}{Let $Y_1$ and $Y_2$ be jointly discrete random variables with probability function
+$p(y_1, y_2)$. Then the marginal probability functions of $Y_1$ and $Y_2$, respectively,
+are given by
+$$p_1(y_1) = \sum_{\text{all} y_2}p(y_1,y_2) \quad \text{and} \quad p_2(y_2) = \sum_{\text{all}y_1}p(y_1,y_2) $$
+Let $Y_1$ and $Y_2$ be jointly continuous random variables with joint density function
+$f(y_1, y_2)$. Then the marginal density functions of $Y_1$ and $Y_2$, respectively, are
+given by
+$$f_1(y_1) = \int_{-\infty}^{\infty}f(y_1,y_2)dy_2 \quad \text{and} \quad f_2(y_2)= \int_{-\infty}^{\infty}f(y_1,y_2)dy_1$$
+}
+
+The term \textbf{marginal}, as applied to the univariate probability functions of $Y_1$ and $Y_2$
+, has intuitive meaning. To find $p_1(y_1)$, we sum $p(y_1,y_2)$ over all values of $y_2$, and hence
+accumulate the probabilities on the $y_1$ axis (or margin). 
+
+\nt{To find marginal pdf
+  \begin{enumerate}
+    \item integrate over the other variable
+    \item fix a line corresponding to a value of desired marginal pdf
+    \item find the limit of integral: intersecting points between this line and support of the joint pdf
+    \item check if the boundary of support is straight line
+    \item remember to specify the support of the resulting marginal pdf
+
+  \end{enumerate}
+}
+
+\dfn{Conditional Distribution discrete case}{
+If $Y_1$ and $Y_2$ are jointly discrete random variables with joint probability function
+$p(y_1, y_2)$ and marginal probability functions $p_1(y_1)$ and $p_2(y_2)$, respectively,
+then the conditional discrete probability function of $Y_1$ given $Y_2$ is
+
+$$p(y_1 | y_2) = P(Y_1 = y_1 | Y_2 = y_2) = \frac{P(Y_1 = y_1, Y_2 = y_2)}{P(Y_2 = y_2)} = \frac{p(y_1,y_2)}{p_2(y_2)}$$
+
+}
+
+
+\dfn{Conditional Distribution cont. case}{
+If $Y_1$ and $Y_2$ are jointly continuous random variables with joint density function
+$f(y_1, y_2)$ and marginal densities $f_1(y_1)$ and $f_2(y_2)$ respectively, then the conditional distribution function of $Y_1$ given $Y_2 = y_2$ is
+
+$$F(y_1 | y_2) = P(Y_1 \leq y_1 | Y_2 = y_2)$$
+$$ = \int_{-\infty}^{y_1}\frac{f(t_1, y_2)}{f_2(y_2)}dt_1$$
+\text{We will call the integrand of this expression the conditional density function of $Y_1$
+given $Y_2 = y_2$}
+\text{and we will denote it by $f(y_1|y_2)$.}
+
+Note for any $f_2(y_2) > 0$, the conditional density of $Y_1$ given $Y_2 = y_2$ is given by
+
+$$f(y_1 | y_2) = \frac{f(y_1,y_2)}{f_2(y_2)}$$
+and, for any $f_1(y_1) > 0$, the conditional density of $Y_2$ given $Y_1 = y_1$
+is gievn by
+$$f(y_2 | y_1) = \frac{f(y_1,y_2)}{f_1(y_1)}$$
+
+
+}
+Notice that $F(y_1|y_2)$ is a function of $y_1$ for a fixed value of $y_2$
+\nt{
+	$$P(a < Y_1 < b | Y_2 = y_2) = \int_{a}^{b}f(y_1 | y_2)dy_1$$
+	also for a valid pmf/pdf for $Y_1$ or $Y_2$ as univariate r.v.
+	\begin{enumerate}
+		\item $f(y_1 | y_2) = \frac{f(y_1, y_2)}{f_2(y_2)} \geq 0$
+		\item $\int_{-\infty}^{\infty}f(y_1 | y_2)dy_1 = \int_{-\infty}^{\infty}\frac{f(y_1,y_2)}{f_2(y_2)}dy_1 = 1$
+	\end{enumerate}
+	}
+\subsection[Examples]{Examples}
+\[
+f(y_1, y_2) =
+\begin{cases} 
+30y_1 y_2^2, & y_1 - 1 \leq y_2 \leq 1 - y_1, \, 0 \leq y_1 \leq 1, \\
+0, & \text{elsewhere}.
+\end{cases}
+\] 
+\qs{
+}{
+	a \quad show that the marginal density of $Y_1$ is a beta density with $\alpha = 2$ and $\beta = 4$
+	\\
+	b \quad Derive the marginal density of $Y_2$
+	\\
+	c \quad Derive the conditional density of $Y_2$ given $Y_1 = y_1$
+	\\
+	d \quad Find $P(Y_2 > 0 | Y_1 = 0.75)$
+}
+\sol
+\\ 
+a \quad 
+\[
+f_1(y_1) = 
+\begin{cases}
+	\int_{y_1 - 1}^{1-y_1}30y_1y_{2}^{2}dy_2, & \, 0 \leq y_1 \leq 1 \\
+	0, & \text{elsewhere}.
+\end{cases}
+\]
+$\sim$ Beta(2,4) after integration \\
+b \quad 
+
+\[
+f_2(y_2) = 
+\begin{cases}
+	\int_{0}^{1-y_2}30y_1y_{2}^{2}dy_1, & \, 0 \leq y_2 \leq 1 \\
+	\int_{0}^{y_2+1}30y_1y_{2}^{2}dy_1, & \, -1 \leq y_2 \leq 0  \\
+	0, & \text{elsewhere}.
+\end{cases}
+\]
+\\
+c \quad
+$$f(y_2|y_1) = \frac{f(y_1,y_1)}{f_1(y_1)} = \frac{30y_1y_2^2}{20y_1(1-y_1)^3} = \frac{3y_2^2}{2(1-y_1)^3} \quad y_1 -1 \leq y_2 \leq 1-y_1, 0 \leq y_1 \leq 1$$
+\\
+d \quad 
+$$\int_{0}^{(1-0.75)}\frac{3y_2^2}{2(1-0.75)^3}dy_2 = \frac{1}{2}	$$
+\section{Independence}
+\dfn{The r.v. $Y_1, Y_2$ are independent if and only if }{discrete: $$p(y_1,y_2) = p_1(y_1)p_2(y_2) \quad \forall y_1,y_2 \in \mathbb{R}^2$$
+coninuous: $$f(y_1,y_2) = f_1(y_1)f_2(y_2) \quad \forall y_1,y_2 \in \mathbb{R}^2$$
+CDF: $$F(y_1,y_2) = F_1(y_1)F_2(y_2) \quad \forall y_1,y_2 \in \mathbb{R}^2$$}
+
+\thm{Determining independence}{Given two r.v.'s $Y_1, Y_2$
+Step 1: is the support of joint pmf/pdf rectangular with sides parallel to the axis? 
+\begin{itemize}
+	\item "No" $\implies$ Not independent 
+	\item "Yes" $\implies$ Move to step 2
+\end{itemize}
+Step 2: Can the joint pmf/pdf be written as the product of the form $p(y_1,y_2) = h(y_a)g(y_b), a,b \in \{1,2\}$
+\begin{itemize}
+	\item "No" $\implies$ Not independent
+	\item "Yes" $\implies$ Independent
+\end{itemize}
+tip: To rigorously prove "cannot be factorized", one way is to find one pair of $(y_1,y_2) \in \mathbb{R}^{2}$ such that
+$$f_1(y_1)f_2(y_2) \neq f(y_1,y_2)$$
+}
+\section{Expected Value}
+\dfn{}{
+	Let \( g(Y_1, Y_2, \ldots, Y_k) \) be a function of the discrete random variables, \( Y_1, Y_2, \ldots, Y_k \), which have probability function \( p(y_1, y_2, \ldots, y_k) \). Then the \textit{expected value} of \( g(Y_1, Y_2, \ldots, Y_k) \) is
+\[
+E[g(Y_1, Y_2, \ldots, Y_k)] = \sum_{\text{all } y_k} \cdots \sum_{\text{all } y_2} \sum_{\text{all } y_1} g(y_1, y_2, \ldots, y_k) p(y_1, y_2, \ldots, y_k).
+\]
+
+If \( Y_1, Y_2, \ldots, Y_k \) are continuous random variables with joint density function \( f(y_1, y_2, \ldots, y_k) \), then
+\[
+E[g(Y_1, Y_2, \ldots, Y_k)] = \int_{-\infty}^\infty \cdots \int_{-\infty}^\infty \int_{-\infty}^\infty
+g(y_1, y_2, \ldots, y_k) f(y_1, y_2, \ldots, y_k) \, dy_1 \, dy_2 \cdots dy_k.
+\]
+}
+
+\nt{In general, $E(Y_1Y_2) \neq E(Y_1)E(Y_2)$ except for when $Y_1$ and $Y_2$ are independent
+\\
+\textbf{Important: } Independence $\Rightarrow E(Y_1Y_2) = E(Y_1)E(Y_2)$ but $E(Y_1Y_2) = E(Y_1)E(Y_2) \nRightarrow$ Independence
+	
+}
+
+Consider two random variables $Y_1, Y_2$ with density function $f(y_1,y_2)$. $$E(Y_1) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} y_1 f(y_1,y_2)dy_2dy_1$$
+
+\section{Covariance}
+The covariance between two random variables $Y_1$ and $Y_2$, a measure of dependence between $Y_1, Y_2$, is defined as 
+$$cov(Y_1, Y_2) = E[(Y_1 - \mu_1)(Y_2 - \mu_2)] \quad \mu_i = E(Y_i) \quad i = 1,2$$ 
+which can also be written in shortcut form as
+$$cov(Y_1,Y_2) = E(Y_1Y_2) - E(Y_1)E(Y_2)$$
+
+note if $Y_1 = Y_2 = Y$ then $cov(Y,Y) = V(Y)$
+
+\cor{}{if $Y_1, Y_2$ are independent, then $cov(Y_1,Y_2) = 0$ because $$E(Y_1Y_2) = E(Y_1)E(Y_2)$$ but $cov(Y_1Y_2) = 0$ does not imply independence}
+The larger the absolute value of the covariance of $Y_1$ and $Y_2$ , the greater the
+linear dependence between $Y_1$ and $Y_2$ . Positive values indicate that $Y_1$ increases as $Y_2$
+increases; negative values indicate that $Y_1$ decreases as $Y_2$ increases. A zero value of
+the covariance indicates that the variables are uncorrelated and that there is no linear
+dependence between $Y_1$ and $Y_2$ 
+\subsection[correlation coeff]{Correlation Coefficient}
+\textsf{correlation coefficient} $\rho$ is a measurement of dependency and is defined as $$\rho = \frac{Cov(Y_1Y_2)}{\sigma_1\sigma_2}$$
+where $\sigma_1, \sigma_2$ are the standard deviation of $Y_1, Y_2$ respectively.\\
+\textbf{Note} $$-1 \leq \rho_{Y_1Y_2} \leq 1$$
+\begin{itemize}
+	\item $\rho = 0 \iff Y_1,Y_2$ uncorrelated
+	\item $\rho = 1 \iff$ Perfect Positive linear dependence $Y_1 = aY_2 + b, \quad a>0$
+	\item $\rho = -1 \iff$ Perfect Negative linear dependence $Y_1 = -aY_2 + b, \quad a>0$  
+\end{itemize}
 \chapter{}
 \section{Eigentheory}
 
