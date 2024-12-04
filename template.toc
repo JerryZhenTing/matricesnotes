@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}Multivariate Distribution}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Multivariate distribution}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Marginal and Conditional distribution}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Examples}{4}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Independence}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Expected Value}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Covariance}{6}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}correlation coeff}{6}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Linear Combination, Conditional Expectation}{7}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Conditional Expectation}{7}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Finals review lecture}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Bivariate Distribution Functions}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Expectation and Covariance}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Conditional Expectation and Variance}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Distribution of Functions of Random Variables}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Sampling Distributions}{10}{section.2.5}%
+\contentsfinish 
