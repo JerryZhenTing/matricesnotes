@@ -367,6 +367,152 @@ V(Y_1) = E[Y_1^2] - [E(Y_1)]^2
 = E[V(Y_1 \mid Y_2)] + V[E(Y_1 \mid Y_2)].
 \]
 \end{myproof}
+\textbf{Conditional Variancec} $$V[Y_1 | Y_2 = y_2] = E(Y_1^2 | Y_2=y_2) - (E(Y_1|Y_2 = y_2))^2$$
+\chapter{Functions of Random Variables}
+\section{Method of distribution functions}
+Steps: 
+\begin{enumerate}
+	\item identify $u = g(Y)$ or $u = g(Y_1,Y_2)$
+	\item cdf: $F_u(u) = P(U\leq u)$ 
+\[ 
+ = P(g(Y) \leq u) =
+\begin{cases}
+	\sum_{y_1,y_2: g(y_1,y_2) \leq u} p(y_1y_2)  \\
+	\int\int_{(y_1,y_2):g(y_1,y_2) \leq u}f(y_1,y_2)dy_1dy_2
+\end{cases}
+\]
+	\item if $u$ is continuous, pdf $f_u(u) = \frac{dF_u(u)}{du}$
+\end{enumerate}
+\cor{
+	Summary of the Distribution Function Method
+}{
+Let \( U \) be a function of the random variables \( Y_1, Y_2, \ldots, Y_n \).
+
+\begin{enumerate}
+    \item Find the region \( U = u \) in the \( (y_1, y_2, \ldots, y_n) \) space.
+    \item Find the region \( U \leq u \).
+    \item Find \( F_U(u) = P(U \leq u) \) by integrating \( f(y_1, y_2, \ldots, y_n) \) over the region \( U \leq u \).
+    \item Find the density function \( f_U(u) \) by differentiating \( F_U(u) \). Thus,
+    \[
+    f_U(u) = \frac{dF_U(u)}{du}.
+    \]
+\end{enumerate}
+
+}
+\section{Method of transformation}
+The method of transformation is a special case of the method of distribution, where 
+$U = (Y)$ with function $h$ strictly monotone on support of $Y$
+
+Suppose that $h(y)$ is an increasing function of $y$ and that $U = h(Y)$, where $Y$ has density function $f_Y(y)$. Then $h^{-1}(u)$ is an increasing function of $u$: If $u_1 < u_2$, then $h^{-1}(u_1) = y_1 < y_2 = h^{-1}(u_2)$. We see from Figure 6.8 that the set of points $y$ such that $h(y) \leq u$ is precisely the same as the set of points $y$ such that $y \leq h^{-1}(u)$. Therefore (see Figure 6.8),
+
+\[
+P(U \leq u) = P(h(Y) \leq u) = P(h^{-1}[h(Y)] \leq h^{-1}(u)) = P(Y \leq h^{-1}(u)).
+\]
+
+or
+
+\[
+F_U(u) = F_Y(h^{-1}(u)).
+\]
+
+Then differentiating with respect to $u$, we have
+
+\[
+f_U(u) = \frac{dF_U(u)}{du} = \frac{dF_Y(h^{-1}(u))}{du} = f_Y(h^{-1}(u)) \frac{d[h^{-1}(u)]}{du}.
+\]
+
+To simplify notation, we will write $dh^{-1}/du$ instead of $d[h^{-1}(u)]/du$ and
+
+\[
+f_U(u) = f_Y(h^{-1}(u)) \frac{dh^{-1}}{du}.
+\]
+
+Thus, we have acquired a new way to find $f_U(u)$ that evolved from the general method of distribution functions. To find $f_U(u)$, solve for $y$ in terms of $u$; that is, find $y = h^{-1}(u)$ and substitute this expression into $f_Y(y)$. Then multiply this quantity by $\frac{dh^{-1}}{du}$. 
+
+\cor{}{
+	Let $Y$ have probability density function $f_Y(y)$. If $h(y)$ is either increasing or decreasing for all $y$ such that $f_Y(y) > 0$, then $U = h(Y)$ has density function
+
+\[
+f_U(u) = f_Y[h^{-1}(u)] \left| \frac{dh^{-1}}{du} \right|,
+\]
+
+where 
+
+\[
+\frac{dh^{-1}}{du} = \frac{d[h^{-1}(u)]}{du}.
+\]
+
+}
+
+
+\nt{Direct application of the method of transformation requires that the function $h(y)$
+be either increasing or decreasing for all y such that $f_Y(y) > 0$. If you want to use this
+method to find the distribution of $U = h(Y)$, you should be very careful to check that
+the function $h(\cdot)$ is either increasing or decreasing for all y in the support of $f_Y(y)$.
+If it is not, the method of transformations cannot be used, and you should instead use
+the method of distribution functions}
+
+
+\textbf{Summary of the Transformation Method}
+
+Let $U = h(Y)$, where $h(y)$ is either an increasing or decreasing function of $y$ for all $y$ such that $f_Y(y) > 0$.
+
+\begin{enumerate}
+    \item Find the inverse function, $y = h^{-1}(u)$.
+    \item Evaluate 
+    \[
+    \frac{dh^{-1}}{du} = \frac{d[h^{-1}(u)]}{du}.
+    \]
+    \item Find $f_U(u)$ by 
+    \[
+    f_U(u) = f_Y[h^{-1}(u)] \left| \frac{dh^{-1}}{du} \right|.
+    \]
+\end{enumerate}
+\section{Moment Generating Functions}
+\thm{}{
+	Let $m_X(t)$ and $m_Y(t)$ denote the moment-generating functions of random variables X and Y , respectively. If both moment-generating functions exist and
+$m_X(t)$ = $m_Y(t)$ for all values of $t$, then $X$ and $Y$ have the same probability
+distribution.
+}
+
+For a random variable $Y$ , all the moments of $Y$ are encapsulated in
+its moment generating function, denoted as $m_Y(t)$.
+
+$$m_Y(t) = E(e^{tY})$$ 
+\[ 
+ = P(g(Y) \leq u) =
+\begin{cases}
+	\sum_{y} e^{ty}p(y)  \\ \\
+	\int_{-\infty}^{\infty}e^{ty}f(y)dy
+\end{cases}
+\]
+
+
+
+The method of moment-generating functions is often very useful for finding the
+distributions of sums of independent random variables.
+
+\thm{}{
+
+Let $Y_1, Y_2, \ldots, Y_n$ be independent random variables with moment-generating functions $m_{Y_1}(t), m_{Y_2}(t), \ldots, m_{Y_n}(t)$, respectively. If $U = Y_1 + Y_2 + \cdots + Y_n$, then
+\[
+m_U(t) = m_{Y_1}(t) \times m_{Y_2}(t) \times \cdots \times m_{Y_n}(t).
+\]
+
+We know that, because the random variables $Y_1, Y_2, \ldots, Y_n$ are independent,
+\[
+m_U(t) = \mathbb{E}\left[e^{t(Y_1 + \cdots + Y_n)}\right] = \mathbb{E}\left(e^{tY_1} e^{tY_2} \cdots e^{tY_n}\right)
+\]
+\[
+= \mathbb{E}\left(e^{tY_1}\right) \times \mathbb{E}\left(e^{tY_2}\right) \times \cdots \times \mathbb{E}\left(e^{tY_n}\right).
+\]
+
+Thus, by the definition of moment-generating functions,
+\[
+m_U(t) = m_{Y_1}(t) \times m_{Y_2}(t) \times \cdots \times m_{Y_n}(t).
+\]
+
+}
 \chapter{Finals review lecture}
 \section{Bivariate Distribution Functions}
 \begin{itemize}

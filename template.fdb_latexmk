@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1733323769 "/home/jerryliu/Desktop/15225/36225/template.tex" "/home/jerryliu/Desktop/15225/36225/template.pdf" "template" 1733323988
+["pdflatex"] 1733466137 "/home/jerryliu/Desktop/15225/36225/template.tex" "/home/jerryliu/Desktop/15225/36225/template.pdf" "template" 1733466705
   "/etc/texmf/web2c/texmf.cnf" 1710207967 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/jerryliu/Desktop/15225/36225/template.aux" 1733323772 5363 18079dd3d0ae01877a70b2a3ef01ad3b ""
-  "/home/jerryliu/Desktop/15225/36225/template.tex" 1733323987 26787 ad5cbd2c1935d17f9be4fa3715dbee7a ""
+  "/home/jerryliu/Desktop/15225/36225/template.aux" 1733466140 6605 b35c27e457028df8b2221853c5c937e5 ""
+  "/home/jerryliu/Desktop/15225/36225/template.tex" 1733466705 31887 84cfd77a027a885914c0c19c0fc66317 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -284,13 +284,13 @@
   "letterfonts.tex" 1733022461 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1733022461 3389 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1733022461 20077 796b6c1bf7f9680a50fcd9eed594461d ""
-  "template.aux" 1733323772 5363 18079dd3d0ae01877a70b2a3ef01ad3b "pdflatex"
-  "template.tex" 1733323987 26787 ad5cbd2c1935d17f9be4fa3715dbee7a ""
-  "template.toc" 1733323772 1387 ef107aaffc170f70e57691b3104d85a8 "pdflatex"
+  "template.aux" 1733466140 6605 b35c27e457028df8b2221853c5c937e5 "pdflatex"
+  "template.tex" 1733466705 31887 84cfd77a027a885914c0c19c0fc66317 ""
+  "template.toc" 1733466140 1740 8eb1c45a3ef48af481cc8e6316db5660 "pdflatex"
   (generated)
   "template.toc"
-  "template.log"
   "/home/jerryliu/Desktop/15225/36225/template.log"
-  "template.pdf"
+  "template.log"
   "template.aux"
+  "template.pdf"
   "/home/jerryliu/Desktop/15225/36225/template.pdf"
