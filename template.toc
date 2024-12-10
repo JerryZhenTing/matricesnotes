@@ -12,10 +12,16 @@
 \contentsline {section}{\numberline {2.1}Method of distribution functions}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Method of transformation}{9}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Moment Generating Functions}{10}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Finals review lecture}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Bivariate Distribution Functions}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Expectation and Covariance}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Conditional Expectation and Variance}{12}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Distribution of Functions of Random Variables}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Sampling Distributions}{13}{section.3.5}%
+\contentsline {section}{\numberline {2.4}MFG under linear transformation}{11}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Sampling distribution}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}T distribution}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}F distribution}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Central Limit Theorem}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Order Statistics}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Finals review lecture}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bivariate Distribution Functions}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Expectation and Covariance}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Conditional Expectation and Variance}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Distribution of Functions of Random Variables}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Sampling Distributions}{17}{section.5.5}%
 \contentsfinish 

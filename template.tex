@@ -513,8 +513,115 @@ m_U(t) = m_{Y_1}(t) \times m_{Y_2}(t) \times \cdots \times m_{Y_n}(t).
 \]
 
 }
+
+\ex{}{Binomial MGF $Y \sim$ bin$(n,0)$ 
+	\begin{align}
+		m_y(t) = E(e^{tY}) &= \sum_{y=0}^{n} {n \choose y}p^{y}(1-p)^{n-y}e^{ty}
+		\\
+		&= \sum_{y=0}^{n} {n \choose y}(pe^{t})^{y}(1-p)^{n-y} \\
+		&= (pe^{t}+1-p)^n
+	\end{align}
+	}
+
+\section{MFG under linear transformation}
+Let $U = aY + b$, then $m_U(t) = $ 
+\begin{align*}
+	&E(e^{tu}) = E(e^{t(aY+b)})\\
+	&= E(e^{tb}e^{taY})\\
+	&=e^{tb}E(e^{taY})\\
+	&=e^{tb}m_Y(at)
+\end{align*}
+Let $S_n = \sum_{i=1}^{n}a_iY_i$ and $Y_i$'s are independent (may or may not have the same distribution)
+$m_{S_n}(t) = $ 
+\begin{align*}
+	&E(e^{tS_{n}}) = E(e^{t\sum_{i=1}^{n}a_iY_i})\\
+	&=E(\prod_{i=1}^{n}e^{ta_iY_i})\\
+	&=\prod_{i=1}^{n}E(e^{ta_iY_i})\\
+	&=\prod_{i=1}^{n}m_{Y_{i}}(ta_i)
+\end{align*}
+\chapter{Sampling distribution}
+\thm{}{Let $Y_1,Y_2,\dots,Y_n$ be a random sample of size n from a normal distribution
+with mean $\mu$ and variance $\sigma^2$, then $$\bar{Y} = \frac{1}{n}\sum_{i=1}^{n}Y_i$$ is normally 
+distributed with mean $\mu_{\bar{Y} = \mu}$ and variance $\sigma_{\bar{Y}}^{2} = \frac{\sigma^2}{n}$}
+then $$Z = \frac{\bar{Y}-\mu_{\bar{Y}}}{\sigma_{\bar{Y}}} = \frac{\bar{Y}-\mu}{\frac{\sigma}{\sqrt{n}}} = \sqrt{n}(\frac{\bar{Y}-\mu}{\sigma})$$
+\thm{}{
+Let $Y_1, Y_2, \ldots, Y_n$ be defined as in Theorem 7.1. Then $Z_i = \frac{(Y_i - \mu)}{\sigma}$ are independent, standard normal random variables, $i = 1, 2, \ldots, n$, and
+\[
+\sum_{i=1}^n Z_i^2 = \sum_{i=1}^n \left( \frac{Y_i - \mu}{\sigma} \right)^2
+\]
+has a $\chi^2$ distribution with $n$ degrees of freedom (df).
+}
+
+The $\chi^2$ distribution plays an important role in many inferential procedures. For example, suppose that we wish to make an inference about the population variance $\sigma^2$ based on a random sample $Y_1, Y_2, \ldots, Y_n$ from a normal population. A good estimator of $\sigma^2$ is the sample variance
+\[
+S^2 = \frac{1}{n-1} \sum_{i=1}^n (Y_i - \overline{Y})^2.
+\]
+
+The following theorem gives the probability distribution for a function of the statistic $S^2$.
+\thm{}{
+Let $Y_1, Y_2, \ldots, Y_n$ be a random sample from a normal distribution with mean $\mu$ and variance $\sigma^2$. Then
+\[
+\frac{(n-1)S^2}{\sigma^2} = \frac{1}{\sigma^2} \sum_{i=1}^n (Y_i - \overline{Y})^2
+\]
+has a $\chi^2$ distribution with $(n-1)$ degrees of freedom (df). Also, $\overline{Y}$ and $S^2$ are independent random variables.
+
+}
+\section{T distribution}
+\thm{}{
+	Let $Z$ be a standard normal random variable and let $W$ be a $\chi^2$-distributed variable with $\nu$ degrees of freedom (df). Then, if $Z$ and $W$ are independent,
+\[
+T = \frac{Z}{\sqrt{W / \nu}}
+\]
+is said to have a \textit{t distribution} with $\nu$ df.
+}
+If $Y_1, Y_2, \ldots, Y_n$ constitute a random sample from a normal population with mean $\mu$ and variance $\sigma^2$, Theorem 7.1 may be applied to show $Z = \sqrt{n} \frac{\overline{Y} - \mu}{\sigma}$ has a standard normal distribution. Theorem 7.3 tells us that $W = (n-1)\frac{S^2}{\sigma^2}$ has a $\chi^2$ distribution with $\nu = n - 1$ df and that $Z$ and $W$ are independent (because $\overline{Y}$ and $S^2$ are independent). Therefore, by Definition 7.2,
+\[
+T = \frac{Z}{\sqrt{W / \nu}} = \frac{\sqrt{n} \frac{\overline{Y} - \mu}{\sigma}}{\sqrt{[(n-1)S^2 / \sigma^2] / (n-1)}} = \sqrt{n} \frac{\overline{Y} - \mu}{S}
+\]
+has a \textit{t distribution} with $(n-1)$ df.
+\section{F distribution}
+\dfn{}{if $W_1 \sim \chi^2(\nu_1), W_2 \sim \chi^2(\nu_2)$ are independent, then  $$\frac{W_1/\nu_1}{W_2/\nu_2}$$ is said 
+to have Snedecor's F-distribution with $(\nu_1,\nu_2)$ degrees of freedom}
+$$W_1 = \frac{(n-1)S_1^2}{\sigma_1^2} \sim \chi^2(n-1) \quad W_2 = \frac{(m-1)S_2^2}{\sigma_2^2}\sim \chi^2(m-1)$$
+$$\frac{S_1^2 / \sigma_1^2}{S_2^2/\sigma_2^2} \sim F(n-1,m-1)$$
+\section{Central Limit Theorem}
+\thm{\textbf{Central Limit Theorem}}{
+Let $Y_1, Y_2, \ldots, Y_n$ be independent and identically distributed random variables with $E(Y_i) = \mu$ and $V(Y_i) = \sigma^2 < \infty$. Define
+\[
+U_n = \frac{\sum_{i=1}^n Y_i - n\mu}{\sigma \sqrt{n}} = \frac{\overline{Y} - \mu}{\sigma / \sqrt{n}} \quad \text{where} \quad \overline{Y} = \frac{1}{n} \sum_{i=1}^n Y_i.
+\]
+Then the distribution function of $U_n$ converges to the standard normal distribution function as $n \to \infty$. That is,
+\[
+\lim_{n \to \infty} P(U_n \leq u) = \int_{-\infty}^u \frac{1}{\sqrt{2\pi}} e^{-t^2/2} \, dt \quad \text{for all } u.
+\]
+
+}
+
+for \textbf{unknown} $\sigma^2$: Suppose $Y_1,\dots,Y_n$ are iid random variables with mean $\mu$ and variance $\sigma^2$, both finite, then for any $t$
+$$\lim_{n \rightarrow \infty}\mathbb{P}(\frac{\bar{Y}-\mu}{S/\sqrt{n}} \leq t) = \Phi $$
+
+\chapter{Order Statistics}
+Suppose we have iid samples ${Y_1, Y_2, \dots,Y_n }$ from some
+distribution. There are various statistics (which, you remember, are
+simply functions of the r.v.’s) that are only calculable if we sort the
+data in ascending order:
+$$Y_{(1)} \leq Y_{(2)} \leq \dots \leq Y_{(n)}$$ and $Y_{(1)}$ is the smallest of the set
+\nt{The $k^{\text{th}}$ order statistics of a observed sample is the sample's $k^{\text{th}}$ smallest value} 
+$F_{(k)}(y) = \mathbb{P}(Y_{(k)} \leq y) = \mathbb{P}(\text{at least k of } Y_{1},\dots, Y_{n} \leq y)$
+$= \sum_{i=k}^{n} {n \choose i}F_Y(y)^i(1-F_Y(y))^{n-i}$
+for the pdf: 
+
+$$f_{(k)}(y) = $$ 
+\[ 
+\frac{dF_{(k)}(y)}{dy} = \dots = 
+\begin{cases}
+	\frac{n!}{(k-1)!(n-k)!}f_{Y}(y)[F_{Y}(y)]^{k-1}(1-F_{Y}(y))^{n-k}  \\ \\
+	0, \quad \text{elsewhere}
+\end{cases}
+\]
 \chapter{Finals review lecture}
 \section{Bivariate Distribution Functions}
+
 \begin{itemize}
 	\item joint pdf: $f(y_1,y_2)$
 	\item Marginal pdf: $f_1(y_1) = \int_{-\infty}^{\infty}f(y_1,y_2)dy_2$

@@ -499,6 +499,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplsy.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/pxsys.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplexx.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplmia.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/pxmiaX.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /home/jerryliu/Desktop/15225/36225/template.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb
